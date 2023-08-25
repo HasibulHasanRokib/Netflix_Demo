@@ -31,9 +31,9 @@ getData();
   return (
     <>
     <section>
-     <div className="h-[580px] w-full object-cover">
-     <div className="w-full h-[580px] bg-gradient-to-r from-black absolute"></div>
-     <Image src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} style={{width:"100%",height:"580px"}} width={1024} height={500}/>
+     <div className="md:h-[580px] h-[500px] w-full object-cover">
+     <div className="w-full md:h-[580px] h-[500px] bg-gradient-to-r from-black absolute"></div>
+     <Image src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} style={{width:"100%",height:"100%"}} width={1024} height={500}/>
      <div className=" absolute top-[20%] md:top-[10%] lg:top-[20%] md:px-[4rem] px-4">
      <h1 className="font-bold text-3xl my-4">{movie?.title}</h1>
         <div>

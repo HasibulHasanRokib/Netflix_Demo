@@ -51,11 +51,12 @@ const responsive = {
 };
 
 
+
   return (
     <>
     <section className='p-6'>
      <h2 className='mx-2 font-semibold font-xl my-2'>{title}</h2>
-     <Carousel responsive={responsive}>
+     <Carousel responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]}>
     {movies.map((movie)=>{
     return<div key={movie.id} className='md:w-[15rem] w-[10rem] h-[9rem] relative'>
     <Image className='hover:border  w-[100%] h-[100%]' src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} width={500} height={500}/> 
