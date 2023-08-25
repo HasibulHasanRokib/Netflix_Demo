@@ -1,10 +1,11 @@
-import Home from "./Home/page"
+import SignIn from "./signin/page"
+
 
 const page = () => {
 
   return (
     <>
-    <Home/>    
+    <SignIn/>    
     </>
   )
 }

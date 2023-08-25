@@ -1,4 +1,4 @@
-import React from 'react'
+import Navbar from '../Components/Navbar'
 import Main from '../Components/Main'
 import Row from '../Components/Row'
 import Request from '../Api/Request'
@@ -6,6 +6,7 @@ import Request from '../Api/Request'
 const Home = () => {
   return (
     <>
+    <Navbar/>
      <Main/>
      <Row title="Upcoming" fetchUrl={Request.requestUpcoming}/>
      <Row title="Trending" fetchUrl={Request.requestTrending}/>

@@ -59,7 +59,7 @@ const responsive = {
      <Carousel responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]}>
     {movies.map((movie)=>{
     return<div key={movie.id} className='md:w-[15rem] w-[10rem] h-[9rem] relative'>
-    <Image className='hover:border  w-[100%] h-[100%]' src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} width={500} height={500}/> 
+    <Image className='hover:border  w-[100%] h-[100%]' src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} width={300} height={300}/> 
     <div className="absolute hover:z-[100] top-0 w-[100%] h-[100%] flex items-center justify-center cursor-pointer opacity-0 hover:opacity-100 ease-in duration-300 bg-black/60">
     <a href="#"><BsPlayCircle size={40}/></a>
     </div>
