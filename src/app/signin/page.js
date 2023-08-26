@@ -1,9 +1,15 @@
+'use client'
+
 import Image from "next/image"
 import BgSignIn from "/public/bg-signIn.jpg"
 import Logo from "/public/Netflix_logo.svg"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 const SignIn = () => {
+
+   const router=useRouter()
+
   return (
     <>
     <section className="w-full h-[100vh] relative">
@@ -19,7 +25,7 @@ const SignIn = () => {
      <div className="py-4">
         <input className="block py-3 px-2 w-full my-2 rounded outline-none bg-[#333]" type="email" placeholder="Email or phone number"  required/>
         <input className="block py-3 px-2 w-full my-3 rounded outline-none bg-[#333]" type="password" placeholder="Password" required/>    
-        <Link className="block bg-[#e50914] w-full py-3 rounded-md mt-8 font-bold text-center" href={'/home'}>Sign In</Link>
+        <button type="button" onClick={()=>{router.push('/home')}} className="block bg-[#e50914] w-full py-3 rounded-md mt-8 font-bold text-center">Sign In</button>
         <div className="mt-2">
             <input type="checkbox"/>
             <label className="text-gray-400"> Remember me</label>
