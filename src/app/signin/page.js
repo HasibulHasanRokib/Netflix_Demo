@@ -27,7 +27,7 @@ const SignIn = () => {
      </div>
      <div>
         <h5 className="text-gray-400 my-4">New to Netflix? <a href="#" className="font-semibold text-white">Sign up now.</a></h5>
-        <p className="text-gray-400 text-xs">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" className="font-bold text-blue-700">Learn more.</a></p>
+        <p className="text-gray-400 text-xs">This page is protected by Google reCAPTCHA to ensure you`re not a bot. <a href="#" className="font-bold text-blue-700">Learn more.</a></p>
      </div>
      </form>
     </section>
