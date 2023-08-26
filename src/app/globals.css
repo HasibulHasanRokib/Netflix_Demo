@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 
-html{
-    scroll-behavior: smooth;
+@layer base{
+    html{
+        @apply scroll-smooth
+    }
+    body{
+        @apply bg-[#141414] text-slate-300;
+    }
 }
-body{
-    background-color: #000000;
-    color: #e5e7eb;
-   
+@layer components{
+    header{
+        @apply flex justify-between items-center md:px-[4rem] px-3 py-4 absolute w-full top-0 z-50;
+    }
 }

@@ -20,5 +20,8 @@
     "react-icons": "^4.10.1",
     "react-multi-carousel": "^2.8.4",
     "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "tailwindcss-textshadow": "^2.1.3"
   }
 }
